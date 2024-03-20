@@ -1,0 +1,84 @@
+/* Основні стилі тіла документу */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стилі для шапки */
+header {
+    background-color: #f56a79;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Видалення відступів для заголовку h1 */
+header h1 {
+    margin: 0;
+}
+
+/* Паддінг для основного контенту */
+main {
+    padding: 15px;
+}
+
+/* Відступи для кожної секції */
+section {
+    margin-bottom: 20px;
+}
+
+/* Стилі для заголовків секцій */
+section h2 {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 10px;
+    color: #333;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #f56a79;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Медіа-запити для адаптивності */
+@media (max-width: 768px) {
+    /* Зміна паддінгу для мобільних пристроїв */
+    body {
+        padding: 5px;
+    }
+
+    /* Зменшення розміру шрифту заголовка на мобільних пристроях */
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    /* Виправлення паддінгу для основного контенту на мобільних пристроях */
+    main {
+        padding: 5px;
+    }
+
+    /* Відступи для секцій в мобільному перегляді */
+    section {
+        margin-bottom: 10px;
+    }
+
+    /* Менші паддінги для заголовків секцій на мобільних пристроях */
+    section h2 {
+        padding: 5px;
+        font-size: 1em;
+    }
+
+    /* Футер не буде фіксованим на мобільних, щоб не заважати іншому контенту */
+    footer {
+        position: static;
+        padding: 5px;
+    }
+}
